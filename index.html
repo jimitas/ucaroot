@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uca_root 単語帳</title>
+  <link rel="stylesheet" href="css/tango.css">
+
+  <audio id="se_1" preload="auto">
+    <source src="Sounds/set1.mp3" type="audio/mp3">
+  </audio>
+  <audio id="se_2" preload="auto">
+    <source src="Sounds/pi.mp3" type="audio/mp3">
+  </audio>
+</head>
+
+<body>
+  <header>
+    <h1>Uca_root 単語帳</h1>
+    <div class="cat-row">
+      <label><input type="checkbox" id="c_01">教育法規</label>
+      <label><input type="checkbox" id="c_02">教育原理</label>
+      <label><input type="checkbox" id="c_03">生徒指導</label>
+      <label><input type="checkbox" id="c_04">人権教育</label>
+    </div>
+    <div class="cat-row">
+      <label><input type="checkbox" id="c_05">特別支援教育</label>
+      <label><input type="checkbox" id="c_06">教育時事</label>
+      <label><input type="checkbox" id="c_07">教育課程・学習指導要領</label>
+    </div>
+    <div class="cat-row">
+      <label><input type="checkbox" id="c_08">教育心理</label>
+      <label><input type="checkbox" id="c_09">ICTの活用</label>
+      <label><input type="checkbox" id="c_10">カタルート</label>
+    </div>
+    <div class="cat-row">
+      <label><input type="checkbox" id="c_11">小学校全科</label>
+      <label><input type="checkbox" id="c_12">学校教育の重点</label>
+      <label><input type="checkbox" id="c_13" checked>瞬発力</label>
+    </div>
+    <div class="btn-row">
+      <button id="select_all" class="btn-sm btn-gray">全選択</button>
+      <button id="deselect_all" class="btn-sm btn-gray">全解除</button>
+      <button id="reset" class="btn-start">スタート</button>
+      <button id="nigate_btn" class="btn-sm btn-orange">★苦手のみ</button>
+    </div>
+  </header>
+  <hr>
+  <main>
+    <div id="bangou">ジャンルを選んで「スタート」を押してください</div>
+    <img id="myimg" alt="" style="display:none; max-width:100%;">
+    <div id="mondai"></div>
+  </main>
+  <hr>
+  <footer>
+    <button id="L_btn" class="btn-nav btn-blue">←前</button>
+    <button id="star_btn" class="btn-star">☆</button>
+    <button id="R_btn" class="btn-nav btn-yellow">次→</button>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
