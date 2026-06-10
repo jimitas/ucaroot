@@ -203,7 +203,10 @@
 
   // ===== イベント =====
 
-  document.getElementById('reset').addEventListener('click', () => startSession(false));
+  document.getElementById('reset').addEventListener('click', () => {
+    document.getElementById('help_panel').hidden = true;
+    startSession(false);
+  });
 
   document.getElementById('nigate_btn').addEventListener('click', () => startSession(true));
 
