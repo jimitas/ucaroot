@@ -84,6 +84,44 @@ button {
 .btn-gray { background-color: #d0d0d0; }
 .btn-orange { background-color: #ffb74d; }
 
+.help-panel {
+  font-size: 11px;
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: 4px 0;
+  line-height: 1.9;
+}
+
+.help-title {
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0 4px;
+}
+
+.help-table {
+  border-collapse: collapse;
+  margin: 4px 0;
+  width: 100%;
+}
+
+.help-table td {
+  padding: 1px 6px 1px 0;
+  vertical-align: top;
+}
+
+.help-table td:first-child {
+  white-space: nowrap;
+  font-weight: bold;
+  min-width: 64px;
+}
+
+.help-note {
+  margin: 4px 0 0;
+  color: #666;
+}
+
 .btn-start {
   background-color: #ff2599;
   color: white;

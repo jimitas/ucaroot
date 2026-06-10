@@ -244,6 +244,11 @@
     }
   });
 
+  document.getElementById('help_btn').addEventListener('click', () => {
+    const panel = document.getElementById('help_panel');
+    panel.hidden = !panel.hidden;
+  });
+
   // ===== 初期化 =====
   startSession(false);
 }
