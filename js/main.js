@@ -122,7 +122,7 @@
 
     // 進捗・状態表示
     document.getElementById('bangou').innerHTML =
-      `${qNum}&nbsp;/&nbsp;${state.count}　<span style="color:${isAnswer ? '#d00' : '#555'};border:none;">${isAnswer ? '【答え】' : '【問題】'}</span>`;
+      `${qNum}&nbsp;/&nbsp;${state.count}　<span style="color:${isAnswer ? '#b83228' : '#7a7068'};border:none;">${isAnswer ? '【答え】' : '【問題】'}</span>`;
 
     // 画像 or テキスト表示
     const img = document.getElementById('myimg');
@@ -139,7 +139,7 @@
 
     // spanの色（問題面は隠す、答え面は赤）
     const spans = mondai.getElementsByTagName('span');
-    const spanColor = isAnswer ? 'red' : 'antiquewhite';
+    const spanColor = isAnswer ? '#b83228' : '#fefcf8';
     for (const s of spans) {
       s.style.color = spanColor;
     }
